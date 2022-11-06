@@ -102,6 +102,7 @@ class DataTransformation:
         except Exception as e:
             raise HousingException(e,sys) from e
 
+
     
 
     def get_data_transformer_object(self)->ColumnTransformer:
