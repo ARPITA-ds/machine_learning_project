@@ -98,7 +98,7 @@ class DataValidation:
                 return validation_status
 
         except Exception as e:
-            raise HousingException(e,sys) from 
+            raise HousingException(e,sys) from e
     def get_and_save_data_drift_report(self):
         try:
             profile = Profile(sections=[DataDriftProfileSection()])
